@@ -53,25 +53,10 @@ export default async function QuizExamPage(props: {
 		redirect("/upgrade");
 	}
 
-	const { questions } = await orpcClient.quiz.exams.questions({
-		id,
-		userFavorite: favoriteOnly,
-	});
-
-	let initialFavoriteQuestions = questions.map((q) => q.id);
-	if (!favoriteOnly) {
-		const favoriteData = await orpcClient.quiz.favorites.get({
-			examId: id,
-		});
-		initialFavoriteQuestions = favoriteData.favorites ?? [];
-	}
-
 	return (
 		<QuizClient
 			examId={id}
-			questions={questions}
 			isAuthenticated={true}
-			initialFavoriteQuestions={initialFavoriteQuestions}
 			favoriteOnly={favoriteOnly}
 		/>
 	);

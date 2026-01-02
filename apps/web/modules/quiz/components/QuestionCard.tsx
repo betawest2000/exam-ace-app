@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@ui/components/card";
 import { Checkbox } from "@ui/components/checkbox";
 import { Label } from "@ui/components/label";
 import { RadioGroup, RadioGroupItem } from "@ui/components/radio-group";
+import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 type QuestionType =
@@ -44,6 +45,7 @@ export function QuestionCard({
 }: QuestionCardProps) {
 	const [selectedAnswer, setSelectedAnswer] = useState<string[]>([]);
 	const [showAnswer, setShowAnswer] = useState(false);
+	const t = useTranslations("quiz.questionCard");
 
 	useEffect(() => {
 		setSelectedAnswer([]);
@@ -76,21 +78,20 @@ export function QuestionCard({
 
 	return (
 		<Card className="w-full max-w-3xl">
-			<CardHeader className="p-3">
+			<CardHeader className="px-2 lg:px-4 pt-2 pb-2">
 				<div className="flex items-start justify-between">
-					<CardTitle className="flex-1 text-sm lg:text-base font-medium">
-						问题 {index + 1}: {question.questionText}
+					<CardTitle className="flex-1 text-sm lg:text-base font-normal">
+						<div
+							className="max-w-none text-sm lg:text-base text-foreground flex flex-col space-y-2 font-medium"
+							// biome-ignore lint/security/noDangerouslySetInnerHtml: HTML content
+							dangerouslySetInnerHTML={{
+								__html: question.questionText,
+							}}
+						/>
 					</CardTitle>
 				</div>
-				<p className="text-sm lg:text-base text-muted-foreground">
-					{question.questionType === "SINGLE_CHOICE" && "单选题"}
-					{question.questionType === "MULTIPLE_CHOICE" && "多选题"}
-					{question.questionType === "FILL_IN_BLANK" && "填空题"}
-					{question.questionType === "TRUE_FALSE" && "判断题"}
-					{question.questionType === "SHORT_ANSWER" && "简答题"}
-				</p>
 			</CardHeader>
-			<CardContent className="space-y-4">
+			<CardContent className="space-y-4 px-2 lg:px-4 pt-2 font-normal">
 				{question.questionType === "SINGLE_CHOICE" && (
 					<RadioGroup
 						key={question.id}
@@ -117,7 +118,7 @@ export function QuestionCard({
 											OPTIONS[idx],
 										)
 											? "font-bold text-green-600 text-sm lg:text-base"
-											: "text-sm lg:text-base"
+											: "font-normal text-sm lg:text-base"
 									}
 								>
 									{option}
@@ -179,12 +180,12 @@ export function QuestionCard({
 							onClick={handleCheckAnswer}
 							disabled={selectedAnswer.length === 0}
 						>
-							检查答案
+							{t("checkAnswer")}
 						</Button>
 					)}
 					{showAnswer && (
 						<Button onClick={handleNext}>
-							{isLast ? "完成" : "下一题"}
+							{isLast ? t("finish") : t("nextQuestion")}
 						</Button>
 					)}
 
@@ -195,7 +196,7 @@ export function QuestionCard({
 								isFavorite ? "bg-yellow-600 text-white" : ""
 							}
 						>
-							{isFavorite ? "已收藏" : "收藏"}
+							{isFavorite ? t("favorited") : t("favorite")}
 						</Button>
 					)}
 				</div>
@@ -207,23 +208,23 @@ export function QuestionCard({
 								isCorrect() ? "text-green-600" : "text-red-600"
 							}`}
 						>
-							{isCorrect() ? "✓ 回答正确！" : "✗ 回答错误"}
+							{isCorrect()
+								? t("feedback.correct")
+								: t("feedback.incorrect")}
 						</div>
 						<div className="text-sm lg:text-base">
-							<strong>正确答案：</strong>
+							<strong>{t("correctAnswerLabel")}</strong>
 							{question.correctAnswer.join(", ")}
 						</div>
 						{question.explanation && (
 							<div className="text-sm lg:text-base text-muted-foreground">
-								<strong>解析：</strong>
-								<div className="mt-1 space-y-2">
-									{question.explanation
-										.split("\n")
-										.filter((line) => line.trim())
-										.map((line, idx) => (
-											<p key={idx}>{line}</p>
-										))}
-								</div>
+								<div
+									className="mt-1 space-y-2 text-sm lg:text-base"
+									// biome-ignore lint/security/noDangerouslySetInnerHtml: HTML content
+									dangerouslySetInnerHTML={{
+										__html: question.explanation,
+									}}
+								/>
 							</div>
 						)}
 					</div>

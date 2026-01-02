@@ -92,7 +92,7 @@ export default async function QuizListPage(props: { params: Promise<Params> }) {
 				</div>
 				<div className="grid gap-8 md:grid-cols-2">
 					{/* User favorites count: {favoriteCount} */}
-					{isAuthenticated && (
+					{isAuthenticated && favoriteCount > 0 && (
 						<QuestionSetCard id={id} {...favoriteData} />
 					)}
 					<QuestionSetCard id={id} {...defaultData} />

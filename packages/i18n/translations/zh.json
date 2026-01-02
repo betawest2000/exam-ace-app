@@ -1,1143 +1,1168 @@
 {
-	"admin": {
-		"menu": {
-			"organizations": "组织",
-			"users": "用户"
-		},
-		"organizations": {
-			"backToList": "返回组织列表",
-			"confirmDelete": {
-				"confirm": "删除",
-				"message": "您确定要删除此组织吗？此操作无法撤销。",
-				"title": "删除组织"
-			},
-			"create": "创建",
-			"delete": "删除",
-			"deleteOrganization": {
-				"deleted": "组织已成功删除！",
-				"deleting": "正在删除组织...",
-				"notDeleted": "无法删除组织。请重试。"
-			},
-			"edit": "编辑",
-			"form": {
-				"createTitle": "创建组织",
-				"name": "组织名称",
-				"notifications": {
-					"error": "无法保存组织。请稍后重试。",
-					"success": "组织已保存。"
-				},
-				"save": "保存",
-				"updateTitle": "编辑组织"
-			},
-			"loading": "正在加载组织...",
-			"membersCount": "{count} 个{count, plural, one {member} other {members}}",
-			"search": "搜索组织...",
-			"title": "管理组织"
-		},
-		"title": "管理",
-		"users": {
-			"confirmDelete": {
-				"confirm": "删除",
-				"message": "您确定要删除此用户吗？此操作无法撤销。",
-				"title": "删除用户"
-			},
-			"delete": "删除",
-			"deleteUser": {
-				"deleted": "用户已成功删除！",
-				"deleting": "正在删除用户...",
-				"notDeleted": "无法删除用户。请重试。"
-			},
-			"emailVerified": {
-				"verified": "邮箱已验证",
-				"waiting": "邮箱等待验证"
-			},
-			"impersonate": "模拟登录",
-			"impersonation": {
-				"impersonating": "正在模拟 {name}..."
-			},
-			"loading": "正在加载用户...",
-			"resendVerificationMail": {
-				"error": "无法重新发送验证邮件。请重试。",
-				"submitting": "正在重新发送验证邮件...",
-				"success": "验证邮件已发送。",
-				"title": "重新发送验证邮件"
-			},
-			"search": "搜索姓名或邮箱...",
-			"title": "管理用户",
-			"assignAdminRole": "分配管理员角色",
-			"removeAdminRole": "移除管理员角色"
-		},
-		"description": "管理您的应用程序。"
-	},
-	"app": {
-		"menu": {
-			"accountSettings": "账户设置",
-			"admin": "管理",
-			"aiChatbot": "AI 聊天机器人",
-			"organizationSettings": "组织设置",
-			"start": "开始",
-			"dashboard": "仪表板"
-		},
-		"userMenu": {
-			"accountSettings": "账户设置",
-			"colorMode": "主题",
-			"language": "语言",
-			"documentation": "文档",
-			"home": "首页",
-			"logout": "退出"
-		}
-	},
-	"auth": {
-		"errors": {
-			"invalidEmailOrPassword": "您输入的凭据无效。请检查后重试。",
-			"unknown": "出现了一些问题。请重试。",
-			"userNotFound": "此用户不存在",
-			"failedToCreateUser": "无法创建用户。请重试。",
-			"failedToCreateSession": "无法创建会话。请重试。",
-			"failedToUpdateUser": "无法更新用户。请重试。",
-			"failedToGetSession": "无法获取会话。",
-			"invalidPassword": "输入的密码不正确。",
-			"invalidEmail": "输入的邮箱无效。",
-			"invalidToken": "您输入的令牌无效或已过期。",
-			"credentialAccountNotFound": "未找到账户。",
-			"emailCanNotBeUpdated": "无法更新邮箱。请重试。",
-			"emailNotVerified": "请先验证您的邮箱，然后再登录。",
-			"failedToGetUserInfo": "无法加载用户信息。",
-			"idTokenNotSupported": "不支持 ID 令牌。",
-			"passwordTooLong": "密码太长。",
-			"passwordTooShort": "密码太短。",
-			"providerNotFound": "不支持此提供商。",
-			"socialAccountAlreadyLinked": "此账户已关联到用户。",
-			"userEmailNotFound": "未找到邮箱。",
-			"userAlreadyExists": "此用户已存在。",
-			"invalidInvitation": "邀请无效或已过期。",
-			"sessionExpired": "会话已过期。",
-			"failedToUnlinkLastAccount": "无法解除账户关联",
-			"accountNotFound": "未找到账户"
-		},
-		"forgotPassword": {
-			"backToSignin": "返回登录",
-			"email": "邮箱",
-			"hints": {
-				"linkNotSent": {
-					"message": "很抱歉，我们无法向您发送重置密码的链接。请稍后重试。",
-					"title": "链接未发送"
-				},
-				"linkSent": {
-					"message": "我们已向您发送了继续操作的链接。请检查您的收件箱。",
-					"title": "链接已发送"
-				}
-			},
-			"message": "请输入您的邮箱地址，我们将向您发送重置密码的链接。",
-			"submit": "发送链接",
-			"title": "忘记密码？"
-		},
-		"login": {
-			"continueWith": "或继续使用",
-			"createAnAccount": "创建账户",
-			"dontHaveAnAccount": "还没有账户？",
-			"forgotPassword": "忘记密码？",
-			"hints": {
-				"invalidCredentials": "您输入的邮箱或密码无效。请重试。",
-				"linkSent": {
-					"message": "我们已向您发送了继续操作的链接。请检查您的收件箱。",
-					"title": "链接已发送"
-				}
-			},
-			"loginWithPasskey": "使用通行密钥登录",
-			"modes": {
-				"magicLink": "魔法链接",
-				"password": "密码"
-			},
-			"submit": "登录",
-			"subtitle": "请输入您的凭据以登录。",
-			"title": "欢迎回来",
-			"sendMagicLink": "发送魔法链接"
-		},
-		"resetPassword": {
-			"backToSignin": "返回登录",
-			"hints": {
-				"error": "很抱歉，我们无法重置您的密码。请重试。",
-				"success": "您的密码已成功重置。"
-			},
-			"message": "请输入新密码。",
-			"newPassword": "新密码",
-			"submit": "重置密码",
-			"title": "重置您的密码"
-		},
-		"signup": {
-			"alreadyHaveAccount": "已有账户？",
-			"email": "邮箱",
-			"hints": {
-				"signupFailed": "很抱歉，我们无法创建您的账户。请稍后重试。",
-				"verifyEmail": "我们已向您发送了验证邮箱的链接。请检查您的收件箱。"
-			},
-			"message": "我们很高兴您想加入我们。请填写下面的表格以创建您的账户。",
-			"name": "姓名",
-			"password": "密码",
-			"signIn": "登录",
-			"submit": "创建账户",
-			"title": "创建账户"
-		},
-		"verify": {
-			"title": "验证您的账户",
-			"code": "一次性密码",
-			"submit": "验证",
-			"backToSignin": "返回登录",
-			"message": "输入您的身份验证应用程序中的一次性密码以继续。"
-		}
-	},
-	"blog": {
-		"description": "阅读我们公司的最新资讯",
-		"title": "我的精彩博客",
-		"back": "返回博客"
-	},
-	"changelog": {
-		"description": "了解我们产品的最新变更。",
-		"title": "更新日志"
-	},
-	"question": {
-		"title": "练习题",
-		"difficulty": {
-			"easy": "简单",
-			"medium": "中等",
-			"hard": "困难"
-		},
-		"tabs": {
-			"question": "问题",
-			"description": "描述",
-			"solution": "解答",
-			"discussion": "讨论",
-			"code": "代码",
-			"testCases": "测试用例",
-			"runTests": "运行测试",
-			"preview": "预览",
-			"console": "控制台"
-		},
-		"label": {
-			"run": "运行",
-			"initialising": "初始化中",
-			"submit": "提交",
-			"layout": "布局",
-			"resetQuestionCodeToDefault": "重置问题代码到默认值",
-			"noTestFilesFound": "未找到测试文件。",
-			"allPracticeQuestions": "所有练习题",
-			"seeWhatYouNeedToBuild": "查看您需要构建的内容"
-		}
-	},
-	"common": {
-		"confirmation": {
-			"cancel": "取消",
-			"confirm": "确认"
-		},
-		"menu": {
-			"blog": "博客",
-			"changelog": "更新日志",
-			"contact": "联系我们",
-			"start": "开始使用",
-			"dashboard": "主页",
-			"practice": "练习",
-			"exams": "考试",
-			"docs": "文档",
-			"faq": "常见问题",
-			"login": "登录",
-			"pricing": "价格"
-		},
-		"practiceMenu": {
-			"categories": {
-				"practiceQuestions": "练习题",
-				"frameworksLanguages": "框架/语言",
-				"questionFormats": "问题格式",
-				"guides": "指南"
-			},
-			"items": {
-				"allPracticeQuestions": {
-					"title": "所有练习题",
-					"description": "前端面试最大的题库，包含100+道练习题"
-				},
-				"frameworksLanguages": {
-					"title": "框架/语言",
-					"description": "针对特定前端框架和语言的专项练习"
-				},
-				"questionFormats": {
-					"title": "问题格式",
-					"description": "针对前端面试特定问题格式的专项练习"
-				},
-				"reactInterviewGuide": {
-					"title": "React 面试指南",
-					"description": "全面指南，助您自信应对 React 面试"
-				},
-				"behavioralInterviewGuide": {
-					"title": "行为面试指南",
-					"description": "帅气的指南，助您顺利通过行为面试"
-				}
-			},
-			"tags": {
-				"coding": "编程",
-				"systemDesign": "系统设计",
-				"quiz": "测验",
-				"jsFunctions": "JavaScript 函数",
-				"uiCoding": "UI 编程",
-				"algoCoding": "算法编程",
-				"more": "+{count} 更多"
-			},
-			"practiceQuestionsSection": {
-				"title": "练习题",
-				"description": "掌握前端面试中常见问题格式的专业技能",
-				"formats": {
-					"uiCoding": "用户界面编程",
-					"jsFunctions": "JavaScript 函数",
-					"systemDesign": "前端系统设计",
-					"quiz": "测验",
-					"algoCoding": "数据结构与算法编程",
-					"algorithmicCoding": "算法编程",
-					"behavioral": "行为面试"
-				},
-				"count": {
-					"questions": "道题目",
-					"articles": "篇文章"
-				}
-			},
-			"companyGuideSection": {
-				"title": "公司指南",
-				"description": "通过学习内部技巧和练习已知问题，为特定公司做好准备。"
-			},
-			"questionItem": {
-				"markComplete": "标记完成",
-				"premium": "会员专享",
-				"difficulty": "难度",
-				"languages": "编程语言",
-				"usersCompleted": "已完成用户数",
-				"completedCount": "{count} 人已完成",
-				"category": {
-					"user-interface": "用户界面编程",
-					"javascript": "JS 函数",
-					"systemDesign": "系统设计",
-					"quiz": "测验",
-					"algorithms": "算法编程",
-					"behavioral": "行为面试"
-				}
-			},
-			"features": {
-				"solvedByExperts": "由前面试官解答",
-				"testCases": "测试用例",
-				"codeInBrowser": "浏览器内编码",
-				"fullDescription": "省去在网上搜索前端面试问题的麻烦。我们拥有 100 多道涵盖各种框架、形式和主题的练习题，每道题都配有来自大型科技公司高级/资深工程师的高质量答案和测试。"
-			},
-			"filters": {
-				"inputPlaceholder": "在问题列表内搜索",
-				"title": "筛选器",
-				"sections": {
-					"topics": "主题",
-					"company": "公司",
-					"difficulty": "难度",
-					"importance": "重要性",
-					"progress": "进度",
-					"frameworkLanguage": "框架 / 语言",
-					"language": "语言",
-					"framework": "框架"
-				},
-				"topics": {
-					"oop": "面向对象编程",
-					"accessibility": "无障碍访问",
-					"reactHooks": "React Hooks",
-					"networking": "网络",
-					"array": "数组",
-					"async": "异步",
-					"breadthFirstSearch": "广度优先搜索",
-					"binary": "二进制",
-					"binarySearch": "二分查找",
-					"binarySearchTree": "二叉搜索树",
-					"binaryTree": "二叉树",
-					"closure": "闭包",
-					"depthFirstSearch": "深度优先搜索",
-					"dynamicProgramming": "动态规划",
-					"graph": "图",
-					"greedy": "贪心算法",
-					"heap": "堆",
-					"intervals": "区间",
-					"linkedList": "链表",
-					"matrix": "矩阵",
-					"queue": "队列",
-					"recursion": "递归",
-					"sorting": "排序",
-					"stack": "栈",
-					"string": "字符串",
-					"tree": "树",
-					"twoPointers": "双指针"
-				},
-				"companies": {
-					"amazon": "亚马逊",
-					"google": "谷歌",
-					"meta": "Meta",
-					"microsoft": "微软",
-					"apple": "苹果",
-					"netflix": "Netflix",
-					"uber": "Uber",
-					"airbnb": "Airbnb",
-					"linkedin": "领英",
-					"twitter": "Twitter",
-					"adobe": "Adobe",
-					"salesforce": "Salesforce",
-					"oracle": "甲骨文",
-					"ibm": "IBM"
-				},
-				"difficulty": {
-					"easy": "简单",
-					"medium": "中等",
-					"hard": "困难"
-				},
-				"importance": {
-					"low": "低",
-					"medium": "中",
-					"high": "高"
-				},
-				"progress": {
-					"completed": "已完成",
-					"notCompleted": "未完成"
-				},
-				"languages": {
-					"html": "HTML",
-					"css": "CSS",
-					"javascript": "JavaScript"
-				},
-				"frameworks": {
-					"react": "React",
-					"vanillaJs": "原生 JS",
-					"angular": "Angular",
-					"svelte": "Svelte",
-					"vue": "Vue"
-				}
-			},
-			"emptyState": {
-				"title": "暂无问题",
-				"description": "请尝试更改搜索词或筛选条件"
-			},
-			"sort": {
-				"label": "排序",
-				"options": {
-					"default": "默认",
-					"titleAsc": "标题：A 到 Z",
-					"titleDesc": "标题：Z 到 A",
-					"difficultyAsc": "难度：简单到困难",
-					"difficultyDesc": "难度：困难到简单",
-					"importanceHighLow": "重要性：高到低",
-					"importanceLowHigh": "重要性：低到高",
-					"durationLowHigh": "时长：低到高",
-					"durationHighLow": "时长：高到低",
-					"createdNewest": "创建时间：最新到最旧",
-					"createdOldest": "创建时间：最旧到最新"
-				}
-			}
-		},
-		"examMenu": {
-			"features": {
-				"detailedExplanations": "详细解释",
-				"learningProgressTracking": "学习进度跟踪",
-				"updateFrequently": "频繁更新"
-			},
-			"favorites": {
-				"title": "收藏夹",
-				"description": "您收藏的所有考题"
-			},
-			"defaultSet": {
-				"title": "默认集合",
-				"description": "考试的所有题目"
-			},
-			"companies": {
-				"amazon": "Amazon",
-				"google": "Google",
-				"microsoft": "Microsoft",
-				"comptia": "CompTIA",
-				"cisco": "Cisco",
-				"itil": "ITIL",
-				"pmi": "PMI",
-				"oracle": "Oracle",
-				"salesforce": "Salesforce",
-				"all": "所有考试"
-			},
-			"pageTitle": "{prefix}考试列表",
-			"amazon": {
-				"aif-c01": "AI Practitioner AIF-C01"
-			},
-			"examItem": {
-				"examCount": "{count} 个考试",
-				"countExams": "考试数量",
-				"questionCount": "{count} 道题目",
-				"countQuestions": "题目数量"
-			},
-			"emptyState": {
-				"title": "暂无考试",
-				"description": "请尝试更改搜索词或筛选条件"
-			},
-			"difficulty": {
-				"title": "难度",
-				"beginner": "初级",
-				"intermediate": "中级",
-				"advanced": "高级",
-				"expert": "专家"
-			}
-		},
-		"tableOfContents": {
-			"title": "本页目录"
-		},
-		"actions": {
-			"continue": "继续",
-			"verify": "验证"
-		},
-		"premium": {
-			"lockCard": {
-				"title": {
-					"companies": "高级公司标签"
-				},
-				"description": {
-					"companies": "购买高级会员以解锁公司标签和我们提供的所有最佳资料。"
-				},
-				"features": {
-					"allPremiumQuestions": "所有高级题目",
-					"highQualitySolutions": "高质量解决方案",
-					"timeSavers": "节省时间的重点领域",
-					"systemDesignGuides": "前端系统设计指南"
-				},
-				"viewPlans": "查看订阅方案"
-			}
-		}
-	},
-	"contact": {
-		"description": "我们随时为您提供帮助。请使用以下表单与我们联系。",
-		"form": {
-			"email": "邮箱",
-			"message": "留言",
-			"name": "姓名",
-			"notifications": {
-				"error": "抱歉，我们无法发送您的消息，请稍后重试。",
-				"success": "您的消息已成功发送。我们会尽快回复您。"
-			},
-			"submit": "发送消息"
-		},
-		"title": "联系我们"
-	},
-	"hero": {
-		"realQuestions": "来自顶级公司的真实面试题",
-		"title": "高效准备前端面试",
-		"description": "练习 JavaScript 题目，构建 UI 组件，深入了解前端系统设计。",
-		"getStarted": "开始使用"
-	},
-	"documentation": {
-		"title": "文档"
-	},
-	"faq": {
-		"description": "有任何问题？我们为您解答。",
-		"title": "常见问题"
-	},
-	"mail": {
-		"common": {
-			"openLinkInBrowser": "如果您想在非默认浏览器中打开链接，请复制并粘贴此链接：",
-			"otp": "一次性密码",
-			"useLink": "或使用以下链接："
-		},
-		"emailVerification": {
-			"body": "您好，\n请点击以下链接验证此新邮箱地址。",
-			"confirmEmail": "验证邮箱",
-			"subject": "验证您的邮箱"
-		},
-		"forgotPassword": {
-			"body": "您好，\n您请求了密码重置。\n\n点击下方按钮重置您的密码。",
-			"resetPassword": "重置密码",
-			"subject": "重置您的密码"
-		},
-		"magicLink": {
-			"body": "您好，\n您请求了 ExamAce 的登录邮件。\n\n点击以下链接登录。",
-			"login": "登录",
-			"subject": "登录 ExamAce"
-		},
-		"newUser": {
-			"body": "您好，\n感谢您注册 TotalFullStack。\n\n要开始使用我们的应用，请点击以下链接确认您的邮箱地址。",
-			"confirmEmail": "确认邮箱",
-			"subject": "确认您的邮箱"
-		},
-		"newsletterSignup": {
-			"body": "感谢您订阅 ExamAce 新闻通讯。我们会向您推送最新消息和更新。",
-			"subject": "欢迎订阅我们的新闻通讯"
-		},
-		"organizationInvitation": {
-			"body": "您已被邀请加入组织 {organizationName}。点击下方按钮或将链接复制到您的浏览器中以接受邀请并加入组织。",
-			"headline": "加入组织 {organizationName}",
-			"join": "加入组织",
-			"subject": "您已被邀请加入一个组织"
-		}
-	},
-	"newsletter": {
-		"email": "邮箱",
-		"hints": {
-			"error": {
-				"message": "无法订阅新闻通讯，请稍后重试。"
-			},
-			"success": {
-				"message": "感谢您订阅我们的新闻通讯。我们会及时向您推送消息。",
-				"title": "订阅成功"
-			}
-		},
-		"submit": "订阅",
-		"subtitle": "成为首批获得 ExamAce 访问权限的用户。",
-		"title": "抢先体验"
-	},
-	"onboarding": {
-		"account": {
-			"avatar": "头像",
-			"avatarDescription": "点击圆圈或将图片拖放到其中以上传您的头像。",
-			"name": "姓名"
-		},
-		"continue": "继续",
-		"message": "只需几个简单步骤即可开始。",
-		"notifications": {
-			"accountSetupFailed": "抱歉，我们无法设置您的账户，请稍后重试。"
-		},
-		"step": "第 {step} 步 / 共 {total} 步",
-		"title": "设置您的账户"
-	},
-	"organizations": {
-		"createForm": {
-			"name": "组织名称",
-			"notifications": {
-				"error": "抱歉，我们无法创建您的组织，请稍后重试。",
-				"success": "您的组织已创建。现在可以邀请成员了。"
-			},
-			"submit": "创建组织",
-			"subtitle": "输入组织名称以开始。您可以稍后在组织设置中更改名称。",
-			"title": "创建组织"
-		},
-		"invitationAlert": {
-			"description": "您需要登录或创建账户才能加入该组织。",
-			"title": "您已被邀请加入一个组织。"
-		},
-		"invitationModal": {
-			"accept": "接受",
-			"decline": "拒绝",
-			"description": "您已被邀请加入组织 {organizationName}。是否接受邀请并加入该组织？",
-			"title": "加入组织"
-		},
-		"organizationSelect": {
-			"createNewOrganization": "创建新组织",
-			"organizations": "组织",
-			"personalAccount": "个人账户"
-		},
-		"organizationsGrid": {
-			"createNewOrganization": "创建新组织",
-			"title": "您的组织"
-		},
-		"roles": {
-			"admin": "管理员",
-			"member": "成员",
-			"owner": "所有者"
-		},
-		"settings": {
-			"changeName": {
-				"title": "组织名称"
-			},
-			"deleteOrganization": {
-				"confirmation": "您确定要删除您的组织吗？",
-				"description": "永久删除您的组织。一旦删除，将无法恢复。请在下方输入您的密码以确认：",
-				"submit": "删除组织",
-				"title": "删除组织"
-			},
-			"logo": {
-				"description": "为您的组织上传 Logo。",
-				"title": "组织 Logo"
-			},
-			"members": {
-				"activeMembers": "活跃成员",
-				"description": "查看组织的所有活跃成员和待处理的邀请。",
-				"invitations": {
-					"empty": "您还没有邀请任何成员。",
-					"expiresAt": "到期时间 {date}",
-					"invitationStatus": {
-						"accepted": "已接受",
-						"canceled": "已取消",
-						"pending": "待处理",
-						"rejected": "已拒绝"
-					},
-					"revoke": "撤销邀请",
-					"resend": "重新发送邀请"
-				},
-				"inviteMember": {
-					"description": "要邀请新成员，请发送邀请。",
-					"email": "邮箱",
-					"notifications": {
-						"error": {
-							"description": "我们无法邀请该成员，请稍后重试。",
-							"title": "无法邀请成员"
-						},
-						"success": {
-							"description": "成员已被邀请。",
-							"title": "成员已邀请"
-						}
-					},
-					"role": "角色",
-					"submit": "邀请",
-					"title": "邀请成员"
-				},
-				"leaveOrganization": "离开组织",
-				"notifications": {
-					"removeMember": {
-						"error": {
-							"description": "无法从组织中移除该成员，请重试。"
-						},
-						"loading": {
-							"description": "正在从组织中移除成员..."
-						},
-						"success": {
-							"description": "该成员已成功从您的组织中移除。"
-						}
-					},
-					"revokeInvitation": {
-						"error": {
-							"description": "无法撤销邀请，请稍后重试。"
-						},
-						"loading": {
-							"description": "正在撤销邀请..."
-						},
-						"success": {
-							"description": "邀请已撤销。"
-						}
-					},
-					"updateMembership": {
-						"error": {
-							"description": "无法更新组织成员资格，请重试。"
-						},
-						"loading": {
-							"description": "正在更新成员资格..."
-						},
-						"success": {
-							"description": "成员资格已成功更新"
-						}
-					},
-					"resendInvitation": {
-						"loading": {
-							"description": "正在重新发送邀请..."
-						},
-						"success": {
-							"description": "邀请已发送"
-						},
-						"error": {
-							"description": "无法发送邀请，请重试。"
-						}
-					}
-				},
-				"pendingInvitations": "待处理的邀请",
-				"removeMember": "移除成员",
-				"title": "成员"
-			},
-			"notifications": {
-				"organizationDeleted": "您的组织已被删除。",
-				"organizationNameNotUpdated": "我们无法更新您的组织名称，请稍后重试。",
-				"organizationNameUpdated": "您的组织名称已更新。",
-				"organizationNotDeleted": "我们无法删除您的组织，请稍后重试。"
-			},
-			"subtitle": "管理组织的设置。",
-			"title": "组织",
-			"dangerZone": {
-				"title": "危险区域"
-			}
-		},
-		"start": {
-			"subtitle": "欢迎来到此组织的首页！"
-		}
-	},
-	"pricing": {
-		"choosePlan": "选择方案",
-		"contactSales": "联系销售",
-		"description": "选择最适合您的方案。",
-		"getStarted": "立即开始",
-		"month": "{count, plural, one {月} other {{count} 个月}}",
-		"monthly": "按月",
-		"products": {
-			"basic": {
-				"description": "适合小型团队。",
-				"features": {
-					"anotherFeature": "另一项出色功能",
-					"limitedSupport": "有限支持"
-				},
-				"title": "基础版"
-			},
-			"enterprise": {
-				"description": "根据您的需求定制的方案",
-				"features": {
-					"enterpriseSupport": "企业级支持",
-					"unlimitedProjects": "无限项目"
-				},
-				"title": "企业版"
-			},
-			"free": {
-				"description": "免费开始",
-				"features": {
-					"anotherFeature": "另一项出色功能",
-					"limitedSupport": "有限支持"
-				},
-				"title": "免费版"
-			},
-			"lifetime": {
-				"description": "一次购买，终身使用。",
-				"features": {
-					"extendSupport": "延长支持",
-					"noRecurringCosts": "无重复费用"
-				},
-				"title": "终身版"
-			},
-			"pro": {
-				"description": "团队最佳选择",
-				"features": {
-					"anotherFeature": "另一项出色功能",
-					"fiveMembers": "最多 5 名成员",
-					"fullSupport": "全面支持"
-				},
-				"title": "专业版"
-			}
-		},
-		"purchase": "购买",
-		"recommended": "推荐",
-		"subscribe": "订阅",
-		"title": "价格",
-		"trialPeriod": "{days} 天免费试用",
-		"year": "{count, plural, one {年} other {{count} 年}}",
-		"yearly": "按年",
-		"perSeat": "每席位"
-	},
-	"settings": {
-		"account": {
-			"avatar": {
-				"description": "要更改头像，请点击此区域的图片，然后从电脑中选择要上传的文件。",
-				"notifications": {
-					"error": "无法更新头像",
-					"success": "头像已成功更新"
-				},
-				"title": "您的头像"
-			},
-			"changeEmail": {
-				"description": "要更改邮箱，请输入新邮箱并点击保存。您需要确认新邮箱后才能生效。",
-				"notifications": {
-					"error": "无法更新邮箱",
-					"success": "邮箱已成功更新"
-				},
-				"title": "您的邮箱"
-			},
-			"changeName": {
-				"notifications": {
-					"error": "无法更新姓名",
-					"success": "姓名已成功更新"
-				},
-				"title": "您的姓名"
-			},
-			"deleteAccount": {
-				"confirmation": "您确定要删除您的账户吗？",
-				"description": "永久删除您的账户。一旦删除，将无法恢复。请在下方输入您的密码以确认：",
-				"notifications": {
-					"error": "无法删除账户",
-					"success": "账户已成功删除"
-				},
-				"submit": "删除账户",
-				"title": "删除账户"
-			},
-			"language": {
-				"description": "要更改账户的应用语言，请从列表中选择一种语言并点击保存。",
-				"notifications": {
-					"error": "无法更新语言",
-					"success": "语言已成功更新"
-				},
-				"title": "您的语言"
-			},
-			"security": {
-				"activeSessions": {
-					"description": "这些是您账户的所有活跃会话。点击 X 可结束特定会话。",
-					"title": "活跃会话",
-					"notifications": {
-						"revokeSession": {
-							"success": "会话已撤销"
-						}
-					},
-					"currentSession": "当前会话"
-				},
-				"changePassword": {
-					"currentPassword": "当前密码",
-					"newPassword": "新密码",
-					"notifications": {
-						"error": "无法更新密码",
-						"success": "密码已成功更新"
-					},
-					"title": "您的密码"
-				},
-				"connectedAccounts": {
-					"connect": "关联",
-					"disconnect": "断开关联",
-					"title": "已关联账户"
-				},
-				"passkeys": {
-					"description": "使用通行密钥作为密码的安全替代方案。",
-					"notifications": {
-						"addPasskey": {
-							"error": {
-								"title": "无法添加通行密钥"
-							},
-							"success": {
-								"title": "通行密钥已添加"
-							}
-						},
-						"deletePasskey": {
-							"error": {
-								"title": "无法删除通行密钥"
-							},
-							"loading": {
-								"title": "正在删除通行密钥..."
-							},
-							"success": {
-								"title": "通行密钥已删除"
-							}
-						}
-					},
-					"title": "通行密钥"
-				},
-				"setPassword": {
-					"description": "您尚未设置密码。要设置密码，您需要完成密码重置流程。点击下方按钮发送重置密码的邮件，然后按照邮件中的说明操作。",
-					"notifications": {
-						"error": "无法发送设置密码的链接，请重试。",
-						"success": "请查看您的收件箱以获取设置密码的链接。"
-					},
-					"submit": "设置密码",
-					"title": "您的密码"
-				},
-				"title": "安全",
-				"twoFactor": {
-					"title": "双重身份验证",
-					"description": "为您的账户添加额外的安全保护层。",
-					"dialog": {
-						"password": {
-							"title": "验证密码",
-							"description": "请输入您的密码验证账户：",
-							"label": "您的密码："
-						},
-						"totpUrl": {
-							"description": "使用您喜欢的身份验证器应用扫描二维码，或手动输入下方密钥以设置双重身份验证。",
-							"code": "输入 6 位验证码以完成设置：",
-							"title": "启用双重身份验证"
-						}
-					},
-					"enable": "启用双重身份验证",
-					"notifications": {
-						"verify": {
-							"success": {
-								"title": "双重身份验证已成功启用。"
-							}
-						},
-						"enable": {
-							"error": {
-								"title": "无法使用提供的密码验证您的账户，请重试。"
-							}
-						},
-						"disable": {
-							"success": {
-								"title": "双重身份验证已成功禁用。"
-							}
-						}
-					},
-					"disable": "禁用双重身份验证",
-					"enabled": "您的账户已启用双重身份验证。"
-				}
-			},
-			"subtitle": "管理您个人账户的设置。",
-			"title": "账户设置"
-		},
-		"billing": {
-			"createCustomerPortal": {
-				"label": "管理账单",
-				"notifications": {
-					"error": {
-						"title": "无法创建客户门户会话，请重试。"
-					}
-				}
-			},
-			"activePlan": {
-				"status": {
-					"active": "活跃",
-					"canceled": "已取消",
-					"expired": "已过期",
-					"incomplete": "未完成",
-					"past_due": "已逾期",
-					"paused": "已暂停",
-					"trialing": "试用中",
-					"unpaid": "未支付"
-				},
-				"title": "您的方案"
-			},
-			"changePlan": {
-				"description": "选择要订阅的方案。",
-				"title": "更改您的方案"
-			},
-			"title": "账单"
-		},
-		"menu": {
-			"account": {
-				"billing": "账单",
-				"dangerZone": "危险区域",
-				"general": "常规",
-				"security": "安全",
-				"title": "账户"
-			},
-			"organization": {
-				"billing": "账单",
-				"general": "常规",
-				"members": "成员",
-				"title": "组织",
-				"dangerZone": "危险区域"
-			}
-		},
-		"save": "保存"
-	},
-	"start": {
-		"subtitle": "查看您出色业务的最新统计数据。",
-		"welcome": "欢迎 {name}！"
-	},
-	"zod": {
-		"errors": {
-			"invalid_arguments": "无效的函数参数",
-			"invalid_date": "无效的日期",
-			"invalid_enum_value": "无效的枚举值。期望 {- options}，收到 '{received}'",
-			"invalid_intersection_types": "交集结果无法合并",
-			"invalid_literal": "无效的字面量值，期望 {expected}",
-			"invalid_return_type": "无效的函数返回类型",
-			"invalid_string": {
-				"cuid": "无效的 {validation}",
-				"datetime": "无效的 {validation}",
-				"email": "无效的 {validation}",
-				"endsWith": "无效的输入：必须以 \"{endsWith}\" 结尾",
-				"regex": "无效",
-				"startsWith": "无效的输入：必须以 \"{startsWith}\" 开头",
-				"url": "无效的 {validation}",
-				"uuid": "无效的 {validation}"
-			},
-			"invalid_type": "期望 {expected}，收到 {received}",
-			"invalid_type_received_undefined": "必填项",
-			"invalid_union": "无效的输入",
-			"invalid_union_discriminator": "无效的判别值。期望 {- options}",
-			"not_finite": "数字必须是有限的",
-			"not_multiple_of": "数字必须是 {multipleOf} 的倍数",
-			"too_big": {
-				"array": {
-					"exact": "数组必须恰好包含 {maximum} 个元素",
-					"inclusive": "数组最多包含 {maximum} 个元素",
-					"not_inclusive": "数组必须少于 {maximum} 个元素"
-				},
-				"date": {
-					"exact": "日期必须恰好为 {- maximum, datetime}",
-					"inclusive": "日期必须小于或等于 {- maximum, datetime}",
-					"not_inclusive": "日期必须小于 {- maximum, datetime}"
-				},
-				"number": {
-					"exact": "数字必须恰好为 {maximum}",
-					"inclusive": "数字必须小于或等于 {maximum}",
-					"not_inclusive": "数字必须小于 {maximum}"
-				},
-				"set": {
-					"exact": "Invalid input",
-					"inclusive": "Invalid input",
-					"not_inclusive": "Invalid input"
-				},
-				"string": {
-					"exact": "字符串必须恰好包含 {maximum} 个字符",
-					"inclusive": "字符串最多包含 {maximum} 个字符",
-					"not_inclusive": "字符串必须少于 {maximum} 个字符"
-				}
-			},
-			"too_small": {
-				"array": {
-					"exact": "数组必须恰好包含 {minimum} 个元素",
-					"inclusive": "数组至少包含 {minimum} 个元素",
-					"not_inclusive": "数组必须多于 {minimum} 个元素"
-				},
-				"date": {
-					"exact": "日期必须恰好为 {- minimum, datetime}",
-					"inclusive": "日期必须大于或等于 {- minimum, datetime}",
-					"not_inclusive": "日期必须大于 {- minimum, datetime}"
-				},
-				"number": {
-					"exact": "数字必须恰好为 {minimum}",
-					"inclusive": "数字必须大于或等于 {minimum}",
-					"not_inclusive": "数字必须大于 {minimum}"
-				},
-				"set": {
-					"exact": "Invalid input",
-					"inclusive": "Invalid input",
-					"not_inclusive": "Invalid input"
-				},
-				"string": {
-					"exact": "字符串必须恰好包含 {minimum} 个字符",
-					"inclusive": "字符串至少包含 {minimum} 个字符",
-					"not_inclusive": "字符串必须多于 {minimum} 个字符"
-				}
-			},
-			"unrecognized_keys": "对象中存在未识别的键：{- keys}"
-		},
-		"types": {
-			"array": "数组",
-			"bigint": "大整数",
-			"boolean": "布尔值",
-			"date": "日期",
-			"float": "浮点数",
-			"function": "函数",
-			"integer": "整数",
-			"map": "映射",
-			"nan": "非数字",
-			"never": "never",
-			"null": "空值",
-			"number": "数字",
-			"object": "对象",
-			"promise": "Promise",
-			"set": "集合",
-			"string": "字符串",
-			"symbol": "符号",
-			"undefined": "未定义",
-			"unknown": "未知",
-			"void": "void"
-		},
-		"validations": {
-			"cuid": "cuid",
-			"cuid2": "cuid2",
-			"datetime": "日期时间",
-			"email": "邮箱",
-			"emoji": "表情符号",
-			"ip": "IP 地址",
-			"regex": "正则表达式",
-			"ulid": "ulid",
-			"url": "网址",
-			"uuid": "uuid"
-		}
-	},
-	"choosePlan": {
-		"title": "选择您的方案",
-		"description": "要继续，请选择一个方案。"
-	},
-	"payments": {
-		"redeemCode": {
-			"title": "兑换码",
-			"description": "输入您的兑换码以激活会员资格",
-			"codeLabel": "兑换码",
-			"codeHint": "请输入兑换码",
-			"verify": "验证",
-			"verifying": "验证中...",
-			"verifySuccess": "兑换码有效！",
-			"redeem": "兑换",
-			"redeeming": "兑换中...",
-			"success": "兑换成功！",
-			"validCode": "有效的兑换码",
-			"type": "类型",
-			"remaining": "剩余使用次数",
-			"expires": "过期时间",
-			"productInfo": "产品：{productId}",
-			"errors": {
-				"invalidFormat": "请输入有效的兑换码格式",
-				"invalidCode": "无效或已过期的兑换码",
-				"verifyFailed": "验证兑换码失败",
-				"failed": "兑换失败"
-			}
-		}
-	}
+  "admin": {
+    "menu": {
+      "organizations": "组织",
+      "users": "用户"
+    },
+    "organizations": {
+      "backToList": "返回组织列表",
+      "confirmDelete": {
+        "confirm": "删除",
+        "message": "您确定要删除此组织吗？此操作无法撤销。",
+        "title": "删除组织"
+      },
+      "create": "创建",
+      "delete": "删除",
+      "deleteOrganization": {
+        "deleted": "组织已成功删除！",
+        "deleting": "正在删除组织...",
+        "notDeleted": "无法删除组织。请重试。"
+      },
+      "edit": "编辑",
+      "form": {
+        "createTitle": "创建组织",
+        "name": "组织名称",
+        "notifications": {
+          "error": "无法保存组织。请稍后重试。",
+          "success": "组织已保存。"
+        },
+        "save": "保存",
+        "updateTitle": "编辑组织"
+      },
+      "loading": "正在加载组织...",
+      "membersCount": "{count} 个{count, plural, one {member} other {members}}",
+      "search": "搜索组织...",
+      "title": "管理组织"
+    },
+    "title": "管理",
+    "users": {
+      "confirmDelete": {
+        "confirm": "删除",
+        "message": "您确定要删除此用户吗？此操作无法撤销。",
+        "title": "删除用户"
+      },
+      "delete": "删除",
+      "deleteUser": {
+        "deleted": "用户已成功删除！",
+        "deleting": "正在删除用户...",
+        "notDeleted": "无法删除用户。请重试。"
+      },
+      "emailVerified": {
+        "verified": "邮箱已验证",
+        "waiting": "邮箱等待验证"
+      },
+      "impersonate": "模拟登录",
+      "impersonation": {
+        "impersonating": "正在模拟 {name}..."
+      },
+      "loading": "正在加载用户...",
+      "resendVerificationMail": {
+        "error": "无法重新发送验证邮件。请重试。",
+        "submitting": "正在重新发送验证邮件...",
+        "success": "验证邮件已发送。",
+        "title": "重新发送验证邮件"
+      },
+      "search": "搜索姓名或邮箱...",
+      "title": "管理用户",
+      "assignAdminRole": "分配管理员角色",
+      "removeAdminRole": "移除管理员角色"
+    },
+    "description": "管理您的应用程序。"
+  },
+  "app": {
+    "menu": {
+      "accountSettings": "账户设置",
+      "admin": "管理",
+      "aiChatbot": "AI 聊天机器人",
+      "organizationSettings": "组织设置",
+      "start": "开始",
+      "dashboard": "仪表板"
+    },
+    "userMenu": {
+      "accountSettings": "账户设置",
+      "colorMode": "主题",
+      "language": "语言",
+      "documentation": "文档",
+      "home": "首页",
+      "logout": "退出"
+    }
+  },
+  "auth": {
+    "errors": {
+      "invalidEmailOrPassword": "您输入的凭据无效。请检查后重试。",
+      "unknown": "出现了一些问题。请重试。",
+      "userNotFound": "此用户不存在",
+      "failedToCreateUser": "无法创建用户。请重试。",
+      "failedToCreateSession": "无法创建会话。请重试。",
+      "failedToUpdateUser": "无法更新用户。请重试。",
+      "failedToGetSession": "无法获取会话。",
+      "invalidPassword": "输入的密码不正确。",
+      "invalidEmail": "输入的邮箱无效。",
+      "invalidToken": "您输入的令牌无效或已过期。",
+      "credentialAccountNotFound": "未找到账户。",
+      "emailCanNotBeUpdated": "无法更新邮箱。请重试。",
+      "emailNotVerified": "请先验证您的邮箱，然后再登录。",
+      "failedToGetUserInfo": "无法加载用户信息。",
+      "idTokenNotSupported": "不支持 ID 令牌。",
+      "passwordTooLong": "密码太长。",
+      "passwordTooShort": "密码太短。",
+      "providerNotFound": "不支持此提供商。",
+      "socialAccountAlreadyLinked": "此账户已关联到用户。",
+      "userEmailNotFound": "未找到邮箱。",
+      "userAlreadyExists": "此用户已存在。",
+      "invalidInvitation": "邀请无效或已过期。",
+      "sessionExpired": "会话已过期。",
+      "failedToUnlinkLastAccount": "无法解除账户关联",
+      "accountNotFound": "未找到账户"
+    },
+    "forgotPassword": {
+      "backToSignin": "返回登录",
+      "email": "邮箱",
+      "hints": {
+        "linkNotSent": {
+          "message": "很抱歉，我们无法向您发送重置密码的链接。请稍后重试。",
+          "title": "链接未发送"
+        },
+        "linkSent": {
+          "message": "我们已向您发送了继续操作的链接。请检查您的收件箱。",
+          "title": "链接已发送"
+        }
+      },
+      "message": "请输入您的邮箱地址，我们将向您发送重置密码的链接。",
+      "submit": "发送链接",
+      "title": "忘记密码？"
+    },
+    "login": {
+      "continueWith": "或继续使用",
+      "createAnAccount": "创建账户",
+      "dontHaveAnAccount": "还没有账户？",
+      "forgotPassword": "忘记密码？",
+      "hints": {
+        "invalidCredentials": "您输入的邮箱或密码无效。请重试。",
+        "linkSent": {
+          "message": "我们已向您发送了继续操作的链接。请检查您的收件箱。",
+          "title": "链接已发送"
+        }
+      },
+      "loginWithPasskey": "使用通行密钥登录",
+      "modes": {
+        "magicLink": "魔法链接",
+        "password": "密码"
+      },
+      "submit": "登录",
+      "subtitle": "请输入您的凭据以登录。",
+      "title": "欢迎回来",
+      "sendMagicLink": "发送魔法链接"
+    },
+    "resetPassword": {
+      "backToSignin": "返回登录",
+      "hints": {
+        "error": "很抱歉，我们无法重置您的密码。请重试。",
+        "success": "您的密码已成功重置。"
+      },
+      "message": "请输入新密码。",
+      "newPassword": "新密码",
+      "submit": "重置密码",
+      "title": "重置您的密码"
+    },
+    "signup": {
+      "alreadyHaveAccount": "已有账户？",
+      "email": "邮箱",
+      "hints": {
+        "signupFailed": "很抱歉，我们无法创建您的账户。请稍后重试。",
+        "verifyEmail": "我们已向您发送了验证邮箱的链接。请检查您的收件箱。"
+      },
+      "message": "我们很高兴您想加入我们。请填写下面的表格以创建您的账户。",
+      "name": "姓名",
+      "password": "密码",
+      "signIn": "登录",
+      "submit": "创建账户",
+      "title": "创建账户"
+    },
+    "verify": {
+      "title": "验证您的账户",
+      "code": "一次性密码",
+      "submit": "验证",
+      "backToSignin": "返回登录",
+      "message": "输入您的身份验证应用程序中的一次性密码以继续。"
+    }
+  },
+  "blog": {
+    "description": "阅读我们公司的最新资讯",
+    "title": "我的精彩博客",
+    "back": "返回博客"
+  },
+  "changelog": {
+    "description": "了解我们产品的最新变更。",
+    "title": "更新日志"
+  },
+  "question": {
+    "title": "练习题",
+    "difficulty": {
+      "easy": "简单",
+      "medium": "中等",
+      "hard": "困难"
+    },
+    "tabs": {
+      "question": "问题",
+      "description": "描述",
+      "solution": "解答",
+      "discussion": "讨论",
+      "code": "代码",
+      "testCases": "测试用例",
+      "runTests": "运行测试",
+      "preview": "预览",
+      "console": "控制台"
+    },
+    "label": {
+      "run": "运行",
+      "initialising": "初始化中",
+      "submit": "提交",
+      "layout": "布局",
+      "resetQuestionCodeToDefault": "重置问题代码到默认值",
+      "noTestFilesFound": "未找到测试文件。",
+      "allPracticeQuestions": "所有练习题",
+      "seeWhatYouNeedToBuild": "查看您需要构建的内容"
+    }
+  },
+  "quiz": {
+    "noFavoriteQuestions": "暂无收藏的问题",
+    "noQuestions": "暂无问题",
+    "backToExamList": "← 返回考试列表",
+    "congratulations": "🎉 恭喜完成！",
+    "completedAllFavoriteQuestions": "你已经完成了所有 {count} 个收藏的问题",
+    "completedAllQuestions": "你已经完成了所有 {count} 个问题",
+    "restart": "重新开始",
+    "viewAllQuestions": "查看所有问题",
+    "questionProgress": "问题 {current} / {total}",
+    "favoriteQuestions": "收藏的问题",
+    "questionCard": {
+      "checkAnswer": "检查答案",
+      "finish": "完成",
+      "nextQuestion": "下一题",
+      "favorite": "收藏",
+      "favorited": "已收藏",
+      "feedback": {
+        "correct": "✓ 回答正确！",
+        "incorrect": "✗ 回答错误"
+      },
+      "correctAnswerLabel": "正确答案："
+    }
+  },
+  "common": {
+    "loading": "加载中...",
+    "confirmation": {
+      "cancel": "取消",
+      "confirm": "确认"
+    },
+    "menu": {
+      "blog": "博客",
+      "changelog": "更新日志",
+      "contact": "联系我们",
+      "start": "开始使用",
+      "dashboard": "主页",
+      "practice": "练习",
+      "exams": "考试",
+      "docs": "文档",
+      "faq": "常见问题",
+      "login": "登录",
+      "pricing": "价格"
+    },
+    "practiceMenu": {
+      "categories": {
+        "practiceQuestions": "练习题",
+        "frameworksLanguages": "框架/语言",
+        "questionFormats": "问题格式",
+        "guides": "指南"
+      },
+      "items": {
+        "allPracticeQuestions": {
+          "title": "所有练习题",
+          "description": "前端面试最大的题库，包含100+道练习题"
+        },
+        "frameworksLanguages": {
+          "title": "框架/语言",
+          "description": "针对特定前端框架和语言的专项练习"
+        },
+        "questionFormats": {
+          "title": "问题格式",
+          "description": "针对前端面试特定问题格式的专项练习"
+        },
+        "reactInterviewGuide": {
+          "title": "React 面试指南",
+          "description": "全面指南，助您自信应对 React 面试"
+        },
+        "behavioralInterviewGuide": {
+          "title": "行为面试指南",
+          "description": "帅气的指南，助您顺利通过行为面试"
+        }
+      },
+      "tags": {
+        "coding": "编程",
+        "systemDesign": "系统设计",
+        "quiz": "测验",
+        "jsFunctions": "JavaScript 函数",
+        "uiCoding": "UI 编程",
+        "algoCoding": "算法编程",
+        "more": "+{count} 更多"
+      },
+      "practiceQuestionsSection": {
+        "title": "练习题",
+        "description": "掌握前端面试中常见问题格式的专业技能",
+        "formats": {
+          "uiCoding": "用户界面编程",
+          "jsFunctions": "JavaScript 函数",
+          "systemDesign": "前端系统设计",
+          "quiz": "测验",
+          "algoCoding": "数据结构与算法编程",
+          "algorithmicCoding": "算法编程",
+          "behavioral": "行为面试"
+        },
+        "count": {
+          "questions": "道题目",
+          "articles": "篇文章"
+        }
+      },
+      "companyGuideSection": {
+        "title": "公司指南",
+        "description": "通过学习内部技巧和练习已知问题，为特定公司做好准备。"
+      },
+      "questionItem": {
+        "markComplete": "标记完成",
+        "premium": "会员专享",
+        "difficulty": "难度",
+        "languages": "编程语言",
+        "usersCompleted": "已完成用户数",
+        "completedCount": "{count} 人已完成",
+        "category": {
+          "user-interface": "用户界面编程",
+          "javascript": "JS 函数",
+          "systemDesign": "系统设计",
+          "quiz": "测验",
+          "algorithms": "算法编程",
+          "behavioral": "行为面试"
+        }
+      },
+      "features": {
+        "solvedByExperts": "由前面试官解答",
+        "testCases": "测试用例",
+        "codeInBrowser": "浏览器内编码",
+        "fullDescription": "省去在网上搜索前端面试问题的麻烦。我们拥有 100 多道涵盖各种框架、形式和主题的练习题，每道题都配有来自大型科技公司高级/资深工程师的高质量答案和测试。"
+      },
+      "filters": {
+        "inputPlaceholder": "在问题列表内搜索",
+        "title": "筛选器",
+        "sections": {
+          "topics": "主题",
+          "company": "公司",
+          "difficulty": "难度",
+          "importance": "重要性",
+          "progress": "进度",
+          "frameworkLanguage": "框架 / 语言",
+          "language": "语言",
+          "framework": "框架"
+        },
+        "topics": {
+          "oop": "面向对象编程",
+          "accessibility": "无障碍访问",
+          "reactHooks": "React Hooks",
+          "networking": "网络",
+          "array": "数组",
+          "async": "异步",
+          "breadthFirstSearch": "广度优先搜索",
+          "binary": "二进制",
+          "binarySearch": "二分查找",
+          "binarySearchTree": "二叉搜索树",
+          "binaryTree": "二叉树",
+          "closure": "闭包",
+          "depthFirstSearch": "深度优先搜索",
+          "dynamicProgramming": "动态规划",
+          "graph": "图",
+          "greedy": "贪心算法",
+          "heap": "堆",
+          "intervals": "区间",
+          "linkedList": "链表",
+          "matrix": "矩阵",
+          "queue": "队列",
+          "recursion": "递归",
+          "sorting": "排序",
+          "stack": "栈",
+          "string": "字符串",
+          "tree": "树",
+          "twoPointers": "双指针"
+        },
+        "companies": {
+          "amazon": "亚马逊",
+          "google": "谷歌",
+          "meta": "Meta",
+          "microsoft": "微软",
+          "apple": "苹果",
+          "netflix": "Netflix",
+          "uber": "Uber",
+          "airbnb": "Airbnb",
+          "linkedin": "领英",
+          "twitter": "Twitter",
+          "adobe": "Adobe",
+          "salesforce": "Salesforce",
+          "oracle": "甲骨文",
+          "ibm": "IBM"
+        },
+        "difficulty": {
+          "easy": "简单",
+          "medium": "中等",
+          "hard": "困难"
+        },
+        "importance": {
+          "low": "低",
+          "medium": "中",
+          "high": "高"
+        },
+        "progress": {
+          "completed": "已完成",
+          "notCompleted": "未完成"
+        },
+        "languages": {
+          "html": "HTML",
+          "css": "CSS",
+          "javascript": "JavaScript"
+        },
+        "frameworks": {
+          "react": "React",
+          "vanillaJs": "原生 JS",
+          "angular": "Angular",
+          "svelte": "Svelte",
+          "vue": "Vue"
+        }
+      },
+      "emptyState": {
+        "title": "暂无问题",
+        "description": "请尝试更改搜索词或筛选条件"
+      },
+      "sort": {
+        "label": "排序",
+        "options": {
+          "default": "默认",
+          "titleAsc": "标题：A 到 Z",
+          "titleDesc": "标题：Z 到 A",
+          "difficultyAsc": "难度：简单到困难",
+          "difficultyDesc": "难度：困难到简单",
+          "importanceHighLow": "重要性：高到低",
+          "importanceLowHigh": "重要性：低到高",
+          "durationLowHigh": "时长：低到高",
+          "durationHighLow": "时长：高到低",
+          "createdNewest": "创建时间：最新到最旧",
+          "createdOldest": "创建时间：最旧到最新"
+        }
+      }
+    },
+    "examMenu": {
+      "features": {
+        "detailedExplanations": "详细解释",
+        "learningProgressTracking": "学习进度跟踪",
+        "updateFrequently": "频繁更新"
+      },
+      "favorites": {
+        "title": "收藏夹",
+        "description": "您收藏的所有考题"
+      },
+      "defaultSet": {
+        "title": "默认集合",
+        "description": "考试的所有题目"
+      },
+      "companies": {
+        "amazon": "Amazon",
+        "google": "Google",
+        "microsoft": "Microsoft",
+        "comptia": "CompTIA",
+        "cisco": "Cisco",
+        "itil": "ITIL",
+        "pmi": "PMI",
+        "oracle": "Oracle",
+        "salesforce": "Salesforce",
+        "all": "所有考试"
+      },
+      "pageTitle": "{prefix}考试列表",
+      "amazon": {
+        "aif-c01": "AI Practitioner AIF-C01"
+      },
+      "examItem": {
+        "examCount": "{count} 个考试",
+        "countExams": "考试数量",
+        "questionCount": "{count} 道题目",
+        "countQuestions": "题目数量"
+      },
+      "emptyState": {
+        "title": "暂无考试",
+        "description": "请尝试更改搜索词或筛选条件"
+      },
+      "difficulty": {
+        "title": "难度",
+        "beginner": "初级",
+        "intermediate": "中级",
+        "advanced": "高级",
+        "expert": "专家"
+      }
+    },
+    "tableOfContents": {
+      "title": "本页目录"
+    },
+    "actions": {
+      "continue": "继续",
+      "verify": "验证"
+    },
+    "premium": {
+      "lockCard": {
+        "title": {
+          "companies": "高级公司标签"
+        },
+        "description": {
+          "companies": "购买高级会员以解锁公司标签和我们提供的所有最佳资料。"
+        },
+        "features": {
+          "allPremiumQuestions": "所有高级题目",
+          "highQualitySolutions": "高质量解决方案",
+          "timeSavers": "节省时间的重点领域",
+          "systemDesignGuides": "前端系统设计指南"
+        },
+        "viewPlans": "查看订阅方案"
+      }
+    }
+  },
+  "contact": {
+    "description": "我们随时为您提供帮助。请使用以下表单与我们联系。",
+    "form": {
+      "email": "邮箱",
+      "message": "留言",
+      "name": "姓名",
+      "notifications": {
+        "error": "抱歉，我们无法发送您的消息，请稍后重试。",
+        "success": "您的消息已成功发送。我们会尽快回复您。"
+      },
+      "submit": "发送消息"
+    },
+    "title": "联系我们"
+  },
+  "hero": {
+    "realQuestions": "来自顶级公司的真实面试题",
+    "title": "高效准备前端面试",
+    "description": "练习 JavaScript 题目，构建 UI 组件，深入了解前端系统设计。",
+    "getStarted": "开始使用"
+  },
+  "documentation": {
+    "title": "文档"
+  },
+  "faq": {
+    "description": "有任何问题？我们为您解答。",
+    "title": "常见问题"
+  },
+  "mail": {
+    "common": {
+      "openLinkInBrowser": "如果您想在非默认浏览器中打开链接，请复制并粘贴此链接：",
+      "otp": "一次性密码",
+      "useLink": "或使用以下链接："
+    },
+    "emailVerification": {
+      "body": "您好，\n请点击以下链接验证此新邮箱地址。",
+      "confirmEmail": "验证邮箱",
+      "subject": "验证您的邮箱"
+    },
+    "forgotPassword": {
+      "body": "您好，\n您请求了密码重置。\n\n点击下方按钮重置您的密码。",
+      "resetPassword": "重置密码",
+      "subject": "重置您的密码"
+    },
+    "magicLink": {
+      "body": "您好，\n您请求了 ExamAce 的登录邮件。\n\n点击以下链接登录。",
+      "login": "登录",
+      "subject": "登录 ExamAce"
+    },
+    "newUser": {
+      "body": "您好，\n感谢您注册 TotalFullStack。\n\n要开始使用我们的应用，请点击以下链接确认您的邮箱地址。",
+      "confirmEmail": "确认邮箱",
+      "subject": "确认您的邮箱"
+    },
+    "newsletterSignup": {
+      "body": "感谢您订阅 ExamAce 新闻通讯。我们会向您推送最新消息和更新。",
+      "subject": "欢迎订阅我们的新闻通讯"
+    },
+    "organizationInvitation": {
+      "body": "您已被邀请加入组织 {organizationName}。点击下方按钮或将链接复制到您的浏览器中以接受邀请并加入组织。",
+      "headline": "加入组织 {organizationName}",
+      "join": "加入组织",
+      "subject": "您已被邀请加入一个组织"
+    }
+  },
+  "newsletter": {
+    "email": "邮箱",
+    "hints": {
+      "error": {
+        "message": "无法订阅新闻通讯，请稍后重试。"
+      },
+      "success": {
+        "message": "感谢您订阅我们的新闻通讯。我们会及时向您推送消息。",
+        "title": "订阅成功"
+      }
+    },
+    "submit": "订阅",
+    "subtitle": "成为首批获得 ExamAce 访问权限的用户。",
+    "title": "抢先体验"
+  },
+  "onboarding": {
+    "account": {
+      "avatar": "头像",
+      "avatarDescription": "点击圆圈或将图片拖放到其中以上传您的头像。",
+      "name": "姓名"
+    },
+    "continue": "继续",
+    "message": "只需几个简单步骤即可开始。",
+    "notifications": {
+      "accountSetupFailed": "抱歉，我们无法设置您的账户，请稍后重试。"
+    },
+    "step": "第 {step} 步 / 共 {total} 步",
+    "title": "设置您的账户"
+  },
+  "organizations": {
+    "createForm": {
+      "name": "组织名称",
+      "notifications": {
+        "error": "抱歉，我们无法创建您的组织，请稍后重试。",
+        "success": "您的组织已创建。现在可以邀请成员了。"
+      },
+      "submit": "创建组织",
+      "subtitle": "输入组织名称以开始。您可以稍后在组织设置中更改名称。",
+      "title": "创建组织"
+    },
+    "invitationAlert": {
+      "description": "您需要登录或创建账户才能加入该组织。",
+      "title": "您已被邀请加入一个组织。"
+    },
+    "invitationModal": {
+      "accept": "接受",
+      "decline": "拒绝",
+      "description": "您已被邀请加入组织 {organizationName}。是否接受邀请并加入该组织？",
+      "title": "加入组织"
+    },
+    "organizationSelect": {
+      "createNewOrganization": "创建新组织",
+      "organizations": "组织",
+      "personalAccount": "个人账户"
+    },
+    "organizationsGrid": {
+      "createNewOrganization": "创建新组织",
+      "title": "您的组织"
+    },
+    "roles": {
+      "admin": "管理员",
+      "member": "成员",
+      "owner": "所有者"
+    },
+    "settings": {
+      "changeName": {
+        "title": "组织名称"
+      },
+      "deleteOrganization": {
+        "confirmation": "您确定要删除您的组织吗？",
+        "description": "永久删除您的组织。一旦删除，将无法恢复。请在下方输入您的密码以确认：",
+        "submit": "删除组织",
+        "title": "删除组织"
+      },
+      "logo": {
+        "description": "为您的组织上传 Logo。",
+        "title": "组织 Logo"
+      },
+      "members": {
+        "activeMembers": "活跃成员",
+        "description": "查看组织的所有活跃成员和待处理的邀请。",
+        "invitations": {
+          "empty": "您还没有邀请任何成员。",
+          "expiresAt": "到期时间 {date}",
+          "invitationStatus": {
+            "accepted": "已接受",
+            "canceled": "已取消",
+            "pending": "待处理",
+            "rejected": "已拒绝"
+          },
+          "revoke": "撤销邀请",
+          "resend": "重新发送邀请"
+        },
+        "inviteMember": {
+          "description": "要邀请新成员，请发送邀请。",
+          "email": "邮箱",
+          "notifications": {
+            "error": {
+              "description": "我们无法邀请该成员，请稍后重试。",
+              "title": "无法邀请成员"
+            },
+            "success": {
+              "description": "成员已被邀请。",
+              "title": "成员已邀请"
+            }
+          },
+          "role": "角色",
+          "submit": "邀请",
+          "title": "邀请成员"
+        },
+        "leaveOrganization": "离开组织",
+        "notifications": {
+          "removeMember": {
+            "error": {
+              "description": "无法从组织中移除该成员，请重试。"
+            },
+            "loading": {
+              "description": "正在从组织中移除成员..."
+            },
+            "success": {
+              "description": "该成员已成功从您的组织中移除。"
+            }
+          },
+          "revokeInvitation": {
+            "error": {
+              "description": "无法撤销邀请，请稍后重试。"
+            },
+            "loading": {
+              "description": "正在撤销邀请..."
+            },
+            "success": {
+              "description": "邀请已撤销。"
+            }
+          },
+          "updateMembership": {
+            "error": {
+              "description": "无法更新组织成员资格，请重试。"
+            },
+            "loading": {
+              "description": "正在更新成员资格..."
+            },
+            "success": {
+              "description": "成员资格已成功更新"
+            }
+          },
+          "resendInvitation": {
+            "loading": {
+              "description": "正在重新发送邀请..."
+            },
+            "success": {
+              "description": "邀请已发送"
+            },
+            "error": {
+              "description": "无法发送邀请，请重试。"
+            }
+          }
+        },
+        "pendingInvitations": "待处理的邀请",
+        "removeMember": "移除成员",
+        "title": "成员"
+      },
+      "notifications": {
+        "organizationDeleted": "您的组织已被删除。",
+        "organizationNameNotUpdated": "我们无法更新您的组织名称，请稍后重试。",
+        "organizationNameUpdated": "您的组织名称已更新。",
+        "organizationNotDeleted": "我们无法删除您的组织，请稍后重试。"
+      },
+      "subtitle": "管理组织的设置。",
+      "title": "组织",
+      "dangerZone": {
+        "title": "危险区域"
+      }
+    },
+    "start": {
+      "subtitle": "欢迎来到此组织的首页！"
+    }
+  },
+  "pricing": {
+    "choosePlan": "选择方案",
+    "contactSales": "联系销售",
+    "description": "选择最适合您的方案。",
+    "getStarted": "立即开始",
+    "month": "{count, plural, one {月} other {{count} 个月}}",
+    "monthly": "按月",
+    "products": {
+      "basic": {
+        "description": "适合小型团队。",
+        "features": {
+          "anotherFeature": "另一项出色功能",
+          "limitedSupport": "有限支持"
+        },
+        "title": "基础版"
+      },
+      "enterprise": {
+        "description": "根据您的需求定制的方案",
+        "features": {
+          "enterpriseSupport": "企业级支持",
+          "unlimitedProjects": "无限项目"
+        },
+        "title": "企业版"
+      },
+      "free": {
+        "description": "免费开始",
+        "features": {
+          "anotherFeature": "另一项出色功能",
+          "limitedSupport": "有限支持"
+        },
+        "title": "免费版"
+      },
+      "lifetime": {
+        "description": "一次购买，终身使用。",
+        "features": {
+          "extendSupport": "延长支持",
+          "noRecurringCosts": "无重复费用"
+        },
+        "title": "终身版"
+      },
+      "pro": {
+        "description": "团队最佳选择",
+        "features": {
+          "anotherFeature": "另一项出色功能",
+          "fiveMembers": "最多 5 名成员",
+          "fullSupport": "全面支持"
+        },
+        "title": "专业版"
+      }
+    },
+    "purchase": "购买",
+    "recommended": "推荐",
+    "subscribe": "订阅",
+    "title": "价格",
+    "trialPeriod": "{days} 天免费试用",
+    "year": "{count, plural, one {年} other {{count} 年}}",
+    "yearly": "按年",
+    "perSeat": "每席位"
+  },
+  "settings": {
+    "account": {
+      "avatar": {
+        "description": "要更改头像，请点击此区域的图片，然后从电脑中选择要上传的文件。",
+        "notifications": {
+          "error": "无法更新头像",
+          "success": "头像已成功更新"
+        },
+        "title": "您的头像"
+      },
+      "changeEmail": {
+        "description": "要更改邮箱，请输入新邮箱并点击保存。您需要确认新邮箱后才能生效。",
+        "notifications": {
+          "error": "无法更新邮箱",
+          "success": "邮箱已成功更新"
+        },
+        "title": "您的邮箱"
+      },
+      "changeName": {
+        "notifications": {
+          "error": "无法更新姓名",
+          "success": "姓名已成功更新"
+        },
+        "title": "您的姓名"
+      },
+      "deleteAccount": {
+        "confirmation": "您确定要删除您的账户吗？",
+        "description": "永久删除您的账户。一旦删除，将无法恢复。请在下方输入您的密码以确认：",
+        "notifications": {
+          "error": "无法删除账户",
+          "success": "账户已成功删除"
+        },
+        "submit": "删除账户",
+        "title": "删除账户"
+      },
+      "language": {
+        "description": "要更改账户的应用语言，请从列表中选择一种语言并点击保存。",
+        "notifications": {
+          "error": "无法更新语言",
+          "success": "语言已成功更新"
+        },
+        "title": "您的语言"
+      },
+      "security": {
+        "activeSessions": {
+          "description": "这些是您账户的所有活跃会话。点击 X 可结束特定会话。",
+          "title": "活跃会话",
+          "notifications": {
+            "revokeSession": {
+              "success": "会话已撤销"
+            }
+          },
+          "currentSession": "当前会话"
+        },
+        "changePassword": {
+          "currentPassword": "当前密码",
+          "newPassword": "新密码",
+          "notifications": {
+            "error": "无法更新密码",
+            "success": "密码已成功更新"
+          },
+          "title": "您的密码"
+        },
+        "connectedAccounts": {
+          "connect": "关联",
+          "disconnect": "断开关联",
+          "title": "已关联账户"
+        },
+        "passkeys": {
+          "description": "使用通行密钥作为密码的安全替代方案。",
+          "notifications": {
+            "addPasskey": {
+              "error": {
+                "title": "无法添加通行密钥"
+              },
+              "success": {
+                "title": "通行密钥已添加"
+              }
+            },
+            "deletePasskey": {
+              "error": {
+                "title": "无法删除通行密钥"
+              },
+              "loading": {
+                "title": "正在删除通行密钥..."
+              },
+              "success": {
+                "title": "通行密钥已删除"
+              }
+            }
+          },
+          "title": "通行密钥"
+        },
+        "setPassword": {
+          "description": "您尚未设置密码。要设置密码，您需要完成密码重置流程。点击下方按钮发送重置密码的邮件，然后按照邮件中的说明操作。",
+          "notifications": {
+            "error": "无法发送设置密码的链接，请重试。",
+            "success": "请查看您的收件箱以获取设置密码的链接。"
+          },
+          "submit": "设置密码",
+          "title": "您的密码"
+        },
+        "title": "安全",
+        "twoFactor": {
+          "title": "双重身份验证",
+          "description": "为您的账户添加额外的安全保护层。",
+          "dialog": {
+            "password": {
+              "title": "验证密码",
+              "description": "请输入您的密码验证账户：",
+              "label": "您的密码："
+            },
+            "totpUrl": {
+              "description": "使用您喜欢的身份验证器应用扫描二维码，或手动输入下方密钥以设置双重身份验证。",
+              "code": "输入 6 位验证码以完成设置：",
+              "title": "启用双重身份验证"
+            }
+          },
+          "enable": "启用双重身份验证",
+          "notifications": {
+            "verify": {
+              "success": {
+                "title": "双重身份验证已成功启用。"
+              }
+            },
+            "enable": {
+              "error": {
+                "title": "无法使用提供的密码验证您的账户，请重试。"
+              }
+            },
+            "disable": {
+              "success": {
+                "title": "双重身份验证已成功禁用。"
+              }
+            }
+          },
+          "disable": "禁用双重身份验证",
+          "enabled": "您的账户已启用双重身份验证。"
+        }
+      },
+      "subtitle": "管理您个人账户的设置。",
+      "title": "账户设置"
+    },
+    "billing": {
+      "createCustomerPortal": {
+        "label": "管理账单",
+        "notifications": {
+          "error": {
+            "title": "无法创建客户门户会话，请重试。"
+          }
+        }
+      },
+      "activePlan": {
+        "status": {
+          "active": "活跃",
+          "canceled": "已取消",
+          "expired": "已过期",
+          "incomplete": "未完成",
+          "past_due": "已逾期",
+          "paused": "已暂停",
+          "trialing": "试用中",
+          "unpaid": "未支付"
+        },
+        "title": "您的方案"
+      },
+      "changePlan": {
+        "description": "选择要订阅的方案。",
+        "title": "更改您的方案"
+      },
+      "title": "账单"
+    },
+    "menu": {
+      "account": {
+        "billing": "账单",
+        "dangerZone": "危险区域",
+        "general": "常规",
+        "security": "安全",
+        "title": "账户"
+      },
+      "organization": {
+        "billing": "账单",
+        "general": "常规",
+        "members": "成员",
+        "title": "组织",
+        "dangerZone": "危险区域"
+      }
+    },
+    "save": "保存"
+  },
+  "start": {
+    "subtitle": "查看您出色业务的最新统计数据。",
+    "welcome": "欢迎 {name}！"
+  },
+  "zod": {
+    "errors": {
+      "invalid_arguments": "无效的函数参数",
+      "invalid_date": "无效的日期",
+      "invalid_enum_value": "无效的枚举值。期望 {- options}，收到 '{received}'",
+      "invalid_intersection_types": "交集结果无法合并",
+      "invalid_literal": "无效的字面量值，期望 {expected}",
+      "invalid_return_type": "无效的函数返回类型",
+      "invalid_string": {
+        "cuid": "无效的 {validation}",
+        "datetime": "无效的 {validation}",
+        "email": "无效的 {validation}",
+        "endsWith": "无效的输入：必须以 \"{endsWith}\" 结尾",
+        "regex": "无效",
+        "startsWith": "无效的输入：必须以 \"{startsWith}\" 开头",
+        "url": "无效的 {validation}",
+        "uuid": "无效的 {validation}"
+      },
+      "invalid_type": "期望 {expected}，收到 {received}",
+      "invalid_type_received_undefined": "必填项",
+      "invalid_union": "无效的输入",
+      "invalid_union_discriminator": "无效的判别值。期望 {- options}",
+      "not_finite": "数字必须是有限的",
+      "not_multiple_of": "数字必须是 {multipleOf} 的倍数",
+      "too_big": {
+        "array": {
+          "exact": "数组必须恰好包含 {maximum} 个元素",
+          "inclusive": "数组最多包含 {maximum} 个元素",
+          "not_inclusive": "数组必须少于 {maximum} 个元素"
+        },
+        "date": {
+          "exact": "日期必须恰好为 {- maximum, datetime}",
+          "inclusive": "日期必须小于或等于 {- maximum, datetime}",
+          "not_inclusive": "日期必须小于 {- maximum, datetime}"
+        },
+        "number": {
+          "exact": "数字必须恰好为 {maximum}",
+          "inclusive": "数字必须小于或等于 {maximum}",
+          "not_inclusive": "数字必须小于 {maximum}"
+        },
+        "set": {
+          "exact": "Invalid input",
+          "inclusive": "Invalid input",
+          "not_inclusive": "Invalid input"
+        },
+        "string": {
+          "exact": "字符串必须恰好包含 {maximum} 个字符",
+          "inclusive": "字符串最多包含 {maximum} 个字符",
+          "not_inclusive": "字符串必须少于 {maximum} 个字符"
+        }
+      },
+      "too_small": {
+        "array": {
+          "exact": "数组必须恰好包含 {minimum} 个元素",
+          "inclusive": "数组至少包含 {minimum} 个元素",
+          "not_inclusive": "数组必须多于 {minimum} 个元素"
+        },
+        "date": {
+          "exact": "日期必须恰好为 {- minimum, datetime}",
+          "inclusive": "日期必须大于或等于 {- minimum, datetime}",
+          "not_inclusive": "日期必须大于 {- minimum, datetime}"
+        },
+        "number": {
+          "exact": "数字必须恰好为 {minimum}",
+          "inclusive": "数字必须大于或等于 {minimum}",
+          "not_inclusive": "数字必须大于 {minimum}"
+        },
+        "set": {
+          "exact": "Invalid input",
+          "inclusive": "Invalid input",
+          "not_inclusive": "Invalid input"
+        },
+        "string": {
+          "exact": "字符串必须恰好包含 {minimum} 个字符",
+          "inclusive": "字符串至少包含 {minimum} 个字符",
+          "not_inclusive": "字符串必须多于 {minimum} 个字符"
+        }
+      },
+      "unrecognized_keys": "对象中存在未识别的键：{- keys}"
+    },
+    "types": {
+      "array": "数组",
+      "bigint": "大整数",
+      "boolean": "布尔值",
+      "date": "日期",
+      "float": "浮点数",
+      "function": "函数",
+      "integer": "整数",
+      "map": "映射",
+      "nan": "非数字",
+      "never": "never",
+      "null": "空值",
+      "number": "数字",
+      "object": "对象",
+      "promise": "Promise",
+      "set": "集合",
+      "string": "字符串",
+      "symbol": "符号",
+      "undefined": "未定义",
+      "unknown": "未知",
+      "void": "void"
+    },
+    "validations": {
+      "cuid": "cuid",
+      "cuid2": "cuid2",
+      "datetime": "日期时间",
+      "email": "邮箱",
+      "emoji": "表情符号",
+      "ip": "IP 地址",
+      "regex": "正则表达式",
+      "ulid": "ulid",
+      "url": "网址",
+      "uuid": "uuid"
+    }
+  },
+  "choosePlan": {
+    "title": "选择您的方案",
+    "description": "要继续，请选择一个方案。"
+  },
+  "payments": {
+    "redeemCode": {
+      "title": "兑换码",
+      "description": "输入您的兑换码以激活会员资格",
+      "codeLabel": "兑换码",
+      "codeHint": "请输入兑换码",
+      "verify": "验证",
+      "verifying": "验证中...",
+      "verifySuccess": "兑换码有效！",
+      "redeem": "兑换",
+      "redeeming": "兑换中...",
+      "success": "兑换成功！",
+      "validCode": "有效的兑换码",
+      "type": "类型",
+      "remaining": "剩余使用次数",
+      "expires": "过期时间",
+      "productInfo": "产品：{productId}",
+      "errors": {
+        "invalidFormat": "请输入有效的兑换码格式",
+        "invalidCode": "无效或已过期的兑换码",
+        "verifyFailed": "验证兑换码失败",
+        "failed": "兑换失败"
+      }
+    }
+  }
 }

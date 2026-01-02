@@ -96,7 +96,7 @@ export type ExamScalarFieldEnum = z.infer<typeof ExamScalarFieldEnumSchema>;
 
 // File: QuestionScalarFieldEnum.schema.ts
 
-export const QuestionScalarFieldEnumSchema = z.enum(['id', 'examId', 'questionText', 'questionType', 'options', 'correctAnswer', 'explanation', 'createdAt', 'updatedAt'])
+export const QuestionScalarFieldEnumSchema = z.enum(['id', 'examId', 'questionText', 'questionType', 'options', 'correctAnswer', 'explanation', 'createdAt', 'updatedAt', 'externalId', 'externalSource'])
 
 export type QuestionScalarFieldEnum = z.infer<typeof QuestionScalarFieldEnumSchema>;
 
@@ -431,6 +431,8 @@ export const QuestionSchema = z.object({
   explanation: z.string().nullish(),
   createdAt: z.date(),
   updatedAt: z.date(),
+  externalId: z.string().nullish(),
+  externalSource: z.string().nullish(),
 });
 
 export type QuestionModel = z.infer<typeof QuestionSchema>;

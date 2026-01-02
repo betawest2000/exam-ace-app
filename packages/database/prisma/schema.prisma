@@ -328,6 +328,8 @@ model Question {
   createdAt     DateTime       @default(now())
   updatedAt     DateTime       @updatedAt
   userFavorites UserFavorite[]
+  externalId    String?        @unique
+  externalSource String?
 
   @@index([examId])
   @@map("questions")
