@@ -1,0 +1,32 @@
+// JS Starter Code
+const jsStarterCode = "/**\n * @param {Function} func\n * @param {number} wait\n * @return {Function}\n */\nexport default function debounce(func, wait) {\n  throw \"Not implemented!\";\n}\n";
+
+// TS Starter Code
+const tsStarterCode = "export default function debounce(func: Function, wait: number): Function {\n  throw \"Not implemented!\";\n}\n";
+
+// JS Test Cases
+const jsTestCode = "import debounce from \"./debounce\";\n\ndescribe(\"debounce\", () => {\n  test(\"can be initialized\", () => {\n    const increment = debounce(() => {}, 50);\n    expect(increment).toBeTruthy();\n  });\n\n  test(\"executes after duration\", (done) => {\n    let i = 0;\n    const increment = debounce(() => {\n      i++;\n    }, 10);\n\n    expect(i).toBe(0);\n    increment();\n    expect(i).toBe(0);\n\n    setTimeout(() => {\n      expect(i).toBe(1);\n      done();\n    }, 20);\n  });\n\n  describe(\"uses arguments\", () => {\n    test(\"called once\", (done) => {\n      let i = 21;\n      const increment = debounce((a: number, b: number) => {\n        i += a * b;\n      }, 10);\n\n      expect(i).toBe(21);\n      increment(3, 7);\n      expect(i).toBe(21);\n\n      setTimeout(() => {\n        expect(i).toBe(42);\n        done();\n      }, 20);\n    });\n\n    test(\"uses arguments of latest invocation\", (done) => {\n      let i = 21;\n      const increment = debounce((a: number, b: number) => {\n        i += a * b;\n      }, 10);\n\n      expect(i).toBe(21);\n      increment(3, 7);\n      increment(4, 5);\n      expect(i).toBe(21);\n\n      setTimeout(() => {\n        expect(i).toBe(41);\n        done();\n      }, 20);\n    });\n  });\n\n  test(\"execute once even after calling it multiple times\", (done) => {\n    let i = 0;\n    const increment = debounce(() => {\n      i++;\n    }, 20);\n\n    expect(i).toBe(0);\n    increment();\n    increment();\n    increment();\n    increment();\n    expect(i).toBe(0);\n\n    // Should not fire yet.\n    setTimeout(() => {\n      expect(i).toBe(0);\n    }, 10);\n\n    setTimeout(() => {\n      expect(i).toBe(1);\n      done();\n    }, 30);\n  });\n\n  test(\"duration extended if called again during window\", (done) => {\n    let i = 0;\n    const increment = debounce(() => {\n      i++;\n    }, 100);\n\n    expect(i).toBe(0);\n    increment();\n    increment();\n    expect(i).toBe(0);\n\n    // Should not fire yet.\n    setTimeout(() => {\n      expect(i).toBe(0);\n      increment();\n      expect(i).toBe(0);\n    }, 50);\n\n    setTimeout(() => {\n      // Still 0 because we fired again at t=50, increment will only happen at t=150\n      expect(i).toBe(0);\n    }, 125);\n\n    setTimeout(() => {\n      expect(i).toBe(1);\n      done();\n      // Add a longer delay because the browser timer is unreliable.\n    }, 1500);\n  });\n\n  test(\"callbacks can access `this`\", (done) => {\n    const increment = debounce(function (this: any, delta: number) {\n      this.val += delta;\n    }, 10);\n\n    const obj = {\n      val: 2,\n      increment,\n    };\n\n    expect(obj.val).toBe(2);\n    obj.increment(3);\n    expect(obj.val).toBe(2);\n\n    setTimeout(() => {\n      expect(obj.val).toBe(5);\n      done();\n    }, 20);\n  });\n});\n";
+
+// TS Test Cases
+const tsTestCode = jsTestCode; 
+
+// JS Test File Name
+const jsTestFileName = "submission.spec.ts";
+
+// TS Test File Name
+const tsTestFileName = "submission.spec.ts";
+// Additional Files
+const additionalFiles = {} as Record<string, string>;
+
+const code = {
+  jsStarterCode,
+  tsStarterCode,
+  jsTestCode,
+  tsTestCode,
+  jsTestFileName,
+  tsTestFileName,
+  additionalFiles,
+} as Record<string, string | Record<string, string>>;
+
+// Export the code object
+export default code;

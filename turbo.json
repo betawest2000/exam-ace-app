@@ -1,0 +1,43 @@
+{
+	"$schema": "https://turbo.build/schema.json",
+	"globalDependencies": ["**/.env.*local"],
+	"globalEnv": ["*"],
+	"tasks": {
+		"build": {
+			"dependsOn": ["^generate", "^build"],
+			"outputs": ["dist/**", ".next/**", "!.next/cache/**"]
+		},
+		"type-check": {},
+		"test": {
+			"dependsOn": ["^generate"],
+			"outputs": ["coverage/**"]
+		},
+		"test:ui": {
+			"cache": false,
+			"persistent": true
+		},
+		"test:coverage": {
+			"dependsOn": ["^generate"],
+			"outputs": ["coverage/**"]
+		},
+		"clean": {
+			"cache": false
+		},
+		"generate": {
+			"cache": false
+		},
+		"dev": {
+			"cache": false,
+			"dependsOn": ["^generate"],
+			"persistent": true
+		},
+		"export": {
+			"outputs": ["out/**"]
+		},
+		"start": {
+			"cache": false,
+			"dependsOn": ["^generate", "^build"],
+			"persistent": true
+		}
+	}
+}

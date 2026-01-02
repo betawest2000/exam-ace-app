@@ -1,0 +1,6 @@
+packages:
+  - config
+  - apps/*
+  - packages/*
+  - tooling/*
+https-proxy: http://192.168.50.38:10811

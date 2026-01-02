@@ -1,0 +1,56 @@
+{
+	"name": "exam-ace-app",
+	"private": true,
+	"scripts": {
+		"build": "dotenv -c -- turbo build",
+		"dev": "dotenv -c -- turbo dev --concurrency 15",
+		"https": "dotenv -c -- turbo dev --concurrency 15 & local-ssl-proxy --source 3001 --target 3000 --cert localhost+3.pem --key localhost+3-key.pem --hostname 0.0.0.0",
+		"type-check": "dotenv -c -- turbo type-check",
+		"start": "dotenv -c -- turbo start",
+		"lint": "biome lint . ",
+		"check": "biome check",
+		"clean": "turbo clean",
+		"format": "biome format . --write",
+		"test": "dotenv -c -- turbo test",
+		"test:ui": "dotenv -c -- turbo test:ui",
+		"test:coverage": "dotenv -c -- turbo test:coverage"
+	},
+	"engines": {
+		"node": ">=20"
+	},
+	"packageManager": "pnpm@10.14.0",
+	"devDependencies": {
+		"@biomejs/biome": "2.3.5",
+		"@repo/tsconfig": "workspace:*",
+		"@testing-library/jest-dom": "^6.9.1",
+		"@testing-library/react": "^16.3.1",
+		"@testing-library/user-event": "^14.6.1",
+		"@types/node": "^24.10.1",
+		"@vitest/coverage-v8": "^4.0.16",
+		"@vitest/ui": "^4.0.16",
+		"dotenv-cli": "^11.0.0",
+		"happy-dom": "^20.0.11",
+		"local-ssl-proxy": "^2.0.5",
+		"turbo": "^2.6.1",
+		"typescript": "5.9.3",
+		"vitest": "^4.0.16"
+	},
+	"pnpm": {
+		"overrides": {
+			"@types/react": "19.2.3",
+			"@types/react-dom": "19.2.3"
+		},
+		"onlyBuiltDependencies": [
+			"@prisma/client",
+			"@prisma/engines",
+			"@swc/core",
+			"prisma",
+			"prisma-zod-generator",
+			"sharp"
+		],
+		"ignoredBuiltDependencies": [
+			"es5-ext",
+			"esbuild"
+		]
+	}
+}
