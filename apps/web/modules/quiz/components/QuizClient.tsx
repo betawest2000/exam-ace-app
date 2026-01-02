@@ -104,19 +104,19 @@ export function QuizClient({
 						{favoriteOnly ? "收藏的" : ""}问题
 					</p>
 				</div>
-				<div className="flex flex-wrap justify-center gap-4">
+				<div className="flex flex-wrap justify-center items-center gap-4">
 					<Button onClick={() => window.location.reload()}>
 						重新开始
 					</Button>
 					{favoriteOnly && (
-						<LocaleLink href={`/quiz/${examId}`}>
+						<LocaleLink href={`/practice/${examId}`}>
 							<Button variant="outline">查看所有问题</Button>
 						</LocaleLink>
 					)}
 
 					<LocaleLink
-						href="/quiz"
-						className="text-sm text-muted-foreground hover:text-foreground"
+						href={`/exams/${examId}`}
+						className="text-sm text-muted-foreground hover:text-foreground items-center flex"
 					>
 						← 返回考试列表
 					</LocaleLink>
@@ -147,8 +147,8 @@ export function QuizClient({
 		<div className="container max-w-4xl pt-16 pb-8">
 			<div className="mb-2 flex items-center gap-2">
 				<LocaleLink
-					href="/quiz"
-					className="mb-1 inline-block text-sm text-muted-foreground hover:text-foreground"
+					href={`/exams/${examId}`}
+					className="mb-1 text-sm text-muted-foreground hover:text-foreground flex items-center"
 				>
 					← 返回考试列表
 				</LocaleLink>
