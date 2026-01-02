@@ -46,6 +46,9 @@ export default async function ChoosePlanPage() {
 	}
 
 	const { activePlan } = createPurchasesHelper(purchases);
+	if (activePlan?.id === "pro") {
+		redirect("/dashboard");
+	}
 
 	return (
 		<div className="container max-w-3xl pt-32 pb-16">
