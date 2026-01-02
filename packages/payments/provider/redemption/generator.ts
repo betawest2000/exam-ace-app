@@ -19,7 +19,7 @@ export function generateCodeString(): string {
  */
 export interface CreateRedemptionCodeOptions {
 	productId: string;
-	type: "SUBSCRIPTION" | "ONE_TIME" | "TRIAL";
+	type: "ONE_TIME" | "TRIAL";
 	subscriptionDurationDays?: number;
 	trialDurationDays?: number;
 	maxRedemptions?: number;
@@ -50,7 +50,7 @@ export async function createNewRedemptionCode(
 	} = options;
 
 	// Validate input
-	if (type === "SUBSCRIPTION" && !subscriptionDurationDays) {
+	if (type === "ONE_TIME" && !subscriptionDurationDays) {
 		throw new Error(
 			"subscriptionDurationDays is required for SUBSCRIPTION type",
 		);
@@ -72,7 +72,7 @@ export async function createNewRedemptionCode(
 		maxRedemptions,
 		currentRedemptions: 0,
 		subscriptionDurationDays:
-			type === "SUBSCRIPTION" ? subscriptionDurationDays : null,
+			type === "ONE_TIME" ? subscriptionDurationDays : null,
 		trialDurationDays: type === "TRIAL" ? trialDurationDays : null,
 		expiresAt: expiresAt || null,
 		createdBy: createdBy || null,

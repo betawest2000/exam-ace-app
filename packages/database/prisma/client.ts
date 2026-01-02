@@ -1,4 +1,3 @@
-import { PrismaNeon } from "@prisma/adapter-neon";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "./generated/client";
 
@@ -11,7 +10,7 @@ const prismaClientSingleton = () => {
 		? new PrismaPg({
 				connectionString: process.env.DATABASE_URL,
 			})
-		: new PrismaNeon({
+		: new PrismaPg({
 				connectionString: process.env.DATABASE_URL,
 			});
 

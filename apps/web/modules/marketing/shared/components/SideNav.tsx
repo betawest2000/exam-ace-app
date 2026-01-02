@@ -150,7 +150,9 @@ export function SideNav() {
 																: "text-foreground/80",
 														)}
 													>
-														<Icon className="size-4 shrink-0" />
+														{Icon && (
+															<Icon className="size-4 shrink-0" />
+														)}
 														<span>
 															{item.title}
 														</span>

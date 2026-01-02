@@ -27,7 +27,7 @@ export const createRedemptionCode = adminProcedure
 	.input(
 		z.object({
 			productId: z.string(),
-			type: z.enum(["SUBSCRIPTION", "ONE_TIME", "TRIAL"]),
+			type: z.enum(["ONE_TIME", "TRIAL"]),
 			subscriptionDurationDays: z.number().optional(),
 			trialDurationDays: z.number().optional(),
 			maxRedemptions: z.number().default(1),
@@ -62,7 +62,7 @@ export const createRedemptionCodesBatch = adminProcedure
 	.input(
 		z.object({
 			productId: z.string(),
-			type: z.enum(["SUBSCRIPTION", "ONE_TIME", "TRIAL"]),
+			type: z.enum(["ONE_TIME", "TRIAL"]),
 			subscriptionDurationDays: z.number().optional(),
 			trialDurationDays: z.number().optional(),
 			maxRedemptions: z.number().default(1),
@@ -105,7 +105,7 @@ export const createCampaignRedemptionCodes = adminProcedure
 	.input(
 		z.object({
 			productId: z.string(),
-			type: z.enum(["SUBSCRIPTION", "ONE_TIME", "TRIAL"]),
+			type: z.enum(["ONE_TIME", "TRIAL"]),
 			subscriptionDurationDays: z.number().optional(),
 			trialDurationDays: z.number().optional(),
 			maxRedemptions: z.number().default(1),
@@ -154,7 +154,7 @@ export const listCodes = adminProcedure
 			status: z
 				.enum(["ACTIVE", "REDEEMED", "EXPIRED", "REVOKED"])
 				.optional(),
-			type: z.enum(["SUBSCRIPTION", "ONE_TIME", "TRIAL"]).optional(),
+			type: z.enum(["ONE_TIME", "TRIAL"]).optional(),
 			includeExpired: z.boolean().optional(),
 		}),
 	)

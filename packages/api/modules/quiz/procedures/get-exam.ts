@@ -57,10 +57,7 @@ export const getExamQuestions = protectedProcedure
 		const { hasPurchase } = createPurchasesHelper(purchases);
 
 		if (!hasPurchase("pro")) {
-			throw new ORPCError(
-				"FORBIDDEN",
-				"You do not have access to this exam",
-			);
+			throw new ORPCError("FORBIDDEN");
 		}
 
 		const { limit = 50, offset = 0 } = input;
