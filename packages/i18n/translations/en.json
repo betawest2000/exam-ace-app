@@ -542,10 +542,11 @@
     "title": "Contact us"
   },
   "hero": {
-    "realQuestions": "Real interview questions from top companies",
+    "realQuestions": "Structured questions of different topics",
     "getStarted": "Get Started",
-    "title": "Prepare Frontend interview efficiently",
-    "description": "Practice JavaScript questions, build UI components and deep dive into frontend system design."
+    "allExams": "All Exams",
+    "title": "Prepare IT Certification Exams Efficiently",
+    "description": "Practice structured questions with detailed explanations and track your learning progress."
   },
   "documentation": {
     "title": "Documentation"

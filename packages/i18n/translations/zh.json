@@ -543,10 +543,11 @@
     "title": "联系我们"
   },
   "hero": {
-    "realQuestions": "来自顶级公司的真实面试题",
-    "title": "高效准备前端面试",
-    "description": "练习 JavaScript 题目，构建 UI 组件，深入了解前端系统设计。",
-    "getStarted": "开始使用"
+    "realQuestions": "不同主题的结构化的题目",
+    "title": "高效准备 IT 认证考试",
+    "description": "练习结构化题目，详细解释并跟踪您的学习进度。",
+    "getStarted": "开始使用",
+    "allExams": "所有考试"
   },
   "documentation": {
     "title": "文档"
